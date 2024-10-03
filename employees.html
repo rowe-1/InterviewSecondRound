@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>Employee Records</h1>
+    <table border="1">
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Position</th>
+        </tr>
+        {% for employee in employees %}
+        <tr>
+            <td>{{ employee['Employee ID'] }}</td>
+            <td>{{ employee['Full Name'] }}</td>
+            <td>{{ employee['Department'] }}</td>
+            <td>{{ employee['Job Title'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
